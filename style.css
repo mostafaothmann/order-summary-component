@@ -1,0 +1,132 @@
+@font-face {
+  font-family: [Red Hat Display];
+  src: url(https://fonts.google.com/specimen/Red+Hat+Display)format(woff)
+}
+body{
+  background-size: contain;
+  background-color:  hsl(225, 100%, 94%);
+  background-repeat: no-repeat;
+}
+.innerContainer
+{
+  grid-column-start: 1;
+  text-align: center;
+  font-family: 'Red Hat Display';
+  font-size:  16px;
+  width: 275px;
+  height: 100%;
+  margin:auto auto;
+  border-radius:20px;
+  background-color: white;
+}
+.image1
+{
+    width: 100%;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+}
+p{
+  text-align: center;
+}
+.p1
+{
+font-weight: 900;
+
+}
+.division1
+{
+  margin:0 auto 20px auto;
+  background-color:hsl(225, 100%, 94%) ;
+  width:90%;
+  height:60px;
+  border-radius:10px;
+  position: relative;
+}
+.image2
+{
+  translate: (-100% -50%);
+  size:30px 30px;
+
+  border-radius: 50%;
+  position:absolute;
+  top:20px;
+  left:10px;
+  float: left;
+  shape-outside:  circle(80px at 50% 50%);;
+  
+}
+.span1
+{
+  position: absolute;
+  top:10px;
+  left:45px;
+  font-weight:700;
+}
+.span2
+{
+  position: absolute;
+  right: 10px;
+  top:20px;
+  text-decoration: underline;
+}
+.span2:hover
+{
+  color:hsla(245, 71%, 56%, 0.705) ;
+}
+.span3
+{
+  position: absolute;
+  top:30px;
+  left:45px;
+  font-weight:700;
+}
+button
+{
+  margin: 0 auto;
+  background-color: white;
+  display:block;
+  border:none;
+}
+button:hover,.span2:hover
+{
+  cursor: pointer;
+}
+.button1
+{
+  background-color: hsl(245, 75%, 52%);
+  color:white;
+  height:40px;
+  width: 90%;
+  border-radius:5px;
+}
+.button1:hover
+{
+  background-color:hsla(245, 71%, 56%, 0.705);
+ 
+}
+.button2
+{
+  background-color: white;
+  color: gray;
+  height:40px;
+  width: 90%;
+  border-radius:5px;
+}
+.button2:hover
+{
+  color:black;
+}
+@media screen and (width>375px)
+{
+  body
+  {
+    background-image: url(./pattern-background-desktop.png);
+  }
+}
+@media screen and (width<=375px)
+{
+  body
+  {
+    background-image:url(./pattern-background-mobile.png);
+  }
+}
